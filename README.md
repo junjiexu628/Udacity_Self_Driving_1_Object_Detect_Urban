@@ -3,7 +3,9 @@ the project work for the object detection in urban environment
 ## Submission Template
 
 All work is on the workspace. Only edited script files are stored in this github repos.
+
 Final train results are on the workspace in the folder// experiments/experiment3/
+
 Try more parameters to optimize the loss, the final detection animation on the test data performs well. All vehicles what I can see by eyes are detected.
 
 ### Project overview
