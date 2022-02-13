@@ -4,25 +4,32 @@ the project work for the object detection in urban environment
 
 ### Project overview
 This section should contain a brief description of the project and what we are trying to achieve. Why is object detection such an important component of self driving car systems?
+
 ---From Waymo dataset, make the EDA on the dataset,and then split the dataset to train and evulation. Based on the Tensorflow frame and Tensorflow detection API, create the training config file, and make the train on the train/eval dataset. Throught the initial train result, use the data augmentation options to modify the pipeline config file to retrain the model.Finally using the trained model to see the detection performance on the test dataset.
+
 ---We need to understand the overall the process of deep learning on self-driving and how to tune the training model, how to find the need documents, how to make own train on the future. 
+
 ---The object detection is the foundation for the avoidness with crash, lane keep,lane change,emergence stop and planning route.
 
 ### Set up
 This section should contain a brief description of the steps to follow to run the code for this repository.
+
 ---work on the workspace. So the set-up follows the readme procedure.
 
 ### Dataset
 #### Dataset analysis
 This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
+
 ---From EDA, the image data distributes in the different environments, downtown and suburb. more objects on some images and less object on some images. The light is also different, some are on the day, some are on the night. The weather is aslo different, some are on the sunny day, some are on the rainny and foggy day.
 #### Cross validation
 This section should detail the cross validation strategy and justify your approach.
+
 ---Use the random function, smaple 90% tfrecord of total into the train set, 10% in the eval set. I look up the libaray of sklearn.model_selection train_test_split. It is also a good option for this. But I don't use this libaray. Just use the random and shutil.
 
 ### Training
 #### Reference experiment
 This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
+
 ---First run: using the default 'pipeline_new.config"
 
 ---First result: The tensorboard shows that the training loss curves oscicalates heavily and evaluation curves shows a dot. The evaluation curve shows strange. The total loss on train dataset is 9.0 and is 9.77 on the eval dataset.Learing_rate at the beginning 0.014 increase to 0.04 then decrease near to zero.From the loss curve we can see the at the beginning the loss increase, then the loss starts gradually to go down. It think the the learning rate is the part of the reason of this change trend. I think the cosine decay learning rate may be not suitable for this case. The learning rate should be change from the big to small, using step wise or exponential in the course.Why the overall loss is so high? I think image data are from all different weather and different light conditions. So the batch size is too small.Probably the first iteration uses the good light images, but the second iteration uses the dark images.And the loss curve shows be going down trend during 2500 steps. So increase the step number is another approach to make the loss down.
