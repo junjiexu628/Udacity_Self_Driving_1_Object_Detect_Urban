@@ -2,6 +2,12 @@
 the project work for the object detection in urban environment
 ## Submission Template
 
+Update the 'data augmentation jupyter file', add the additional EDA on the class charts
+
+Upload the tensorboard figures for loss, mPA and PR on the tried runs on the train results.
+
+
+
 All work is on the workspace. Only edited script files are stored in this github repos.
 
 Final train results are on the workspace in the folder// experiments/experiment3/
@@ -30,7 +36,7 @@ This section should contain a quantitative and qualitative description of the da
 #### Cross validation
 This section should detail the cross validation strategy and justify your approach.
 
----Use the random function, smaple 90% tfrecord of total into the train set, 10% in the eval set. I look up the libaray of sklearn.model_selection train_test_split. It is also a good option for this. But I don't use this libaray. Just use the random and shutil.
+---From the data distribution analysis on the charts, the vehicle is on high rate, pedestrian is on the next, and the cyclist is less. Day image is muchmore, night is less. Use the random function, smaple 90% tfrecord of total into the train set, 10% in the eval set. I look up the libaray of sklearn.model_selection train_test_split. It is also a good option for this. But I don't use this libaray. Just use the random and shutil.
 
 ### Training
 #### Reference experiment
