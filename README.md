@@ -49,11 +49,11 @@ This section should detail the results of the reference experiment. It should in
 
 -3.Next action: add the 'data augmentation option'. The jupyter recommends the random_rgb_to_gray option. So add this script in the 'pipeline_new.config'. Raname the file to 'pipeline_new0.config'.Make the new folder 'experiment0' in the experiment folder. Put the pipeline_new0.config file in to this new folder. Run second.
 
-![**Train and evaluation run in parallel, but the limited resource in the workspace.So the eval show a dot. Many students have the same issue in the Knowledge platform. No improvement on this issue. I surprise you even don't know this.**](/tensorBD_reference/LOSS1.png)
-![train and eval](/tensorBD_reference/LOSS2.png)
-![train and eval](/tensorBD_reference/LOSS3.png)
-![train and eval](/tensorBD_reference/RECALL.png)
-![train and eval](/tensorBD_reference/mAP1.png)
+![**Train and evaluation run in parallel, but the limited resource in the workspace.So the eval show a dot. Many students have the same issue in the Knowledge platform. No improvement on this issue. I surprise you even don't know this.**](/tensorBD_reference/LOSS1.PNG)
+![train and eval](/tensorBD_reference/LOSS2.PNG)
+![train and eval](/tensorBD_reference/LOSS3.PNG)
+![train and eval](/tensorBD_reference/RECALL.PNG)
+![train and eval](/tensorBD_reference/mAP1.PNG)
 
 #### Improve on the reference
 This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
@@ -68,20 +68,20 @@ This section should highlight the different strategies you adopted to improve yo
 -5.Third result: The tensorboard shows that the training loss curves also oscicalates heavily, but the amplitude decrease a lot. The total loss on train dataset from first run result 9.0 is down to 2.3. The total loss on the evaluation data from the first run 9.77 is down to 2.97. Good optimization. But not enough. The goal is between 0 to 1.
 ---Next action: Increase the step is sure to make the loss down. So this isn't our purpose to try on the sure thing. I will try the exponential learing rate. initial_learning_rate =0.014,decay_steps =2500, decay_factor=0.95.
 
-![train and eval](/tensorBD_experiment0/LOSS1.png)
-![train and eval](/tensorBD_experiment0/LOSS2.png)
-![train and eval](/tensorBD_experiment0/LOSS3.png)
+![train and eval](/tensorBD_experiment0/LOSS1.PNG)
+![train and eval](/tensorBD_experiment0/LOSS2.PNG)
+![train and eval](/tensorBD_experiment0/LOSS3.PNG)
 
 -6.Fourth run(in experiment1 folder): modify the'pipeline_new0.config" with exponential decay learning rate renamed 'pipeline_new1.config'
 
 -7.Fourth result: The total loss on train dataset is 3.89,compared with the last 2.3. The total loss on the evaluation dataset is 4.4, not better than the last 2.97.It doesn't optimize.The trend of going down is too slow in comparison of the cosine decay.
 ---Next action: The exponential decay learning rate performs unsatisfied. It doesn't become better than the cosine decay learning rate. So try the Adam optimizer based on the cosine decay.
 
-![train and eval](/tensorBD_experiment1/LOSS1.png)
-![train and eval](/tensorBD_experiment1/LOSS2.png)
-![train and eval](/tensorBD_experiment1/LOSS3.png)
-![train and eval](/tensorBD_experiment1/RECALL.png)
-![train and eval](/tensorBD_experiment1/PR1.png)
+![train and eval](/tensorBD_experiment1/LOSS1.PNG)
+![train and eval](/tensorBD_experiment1/LOSS2.PNG)
+![train and eval](/tensorBD_experiment1/LOSS3.PNG)
+![train and eval](/tensorBD_experiment1/RECALL.PNG)
+![train and eval](/tensorBD_experiment1/PR1.PNG)
 
 -8.Fifth run(in experiment2 folder): modify the'pipeline_new0.config" with Adam optimizer renamed 'pipeline_new2.config'
 
@@ -101,14 +101,14 @@ No catch the tensorboard images due to the crash on the workspace.
 -13.Final result: The total loss on train dataset is 0.8 and 1.0 on the evaluation dataset. This is the best result till now.The recall and precision on the meduium/large area achieve around 0.5. This is the best I can do.The detection animation shows all the vehicles what I can see by eyes are detected.
 
 
-![train and eval](/tensorBD_experiment3/loss1.png)
-![train and eval](/tensorBD_experiment3/loss2.png)
-![train and eval](/tensorBD_experiment3/loss3.png)
-![train and eval](/tensorBD_experiment3/mAP1.png)
-![train and eval](/tensorBD_experiment3/mAP2.png)
-![train and eval](/tensorBD_experiment3/mAP3.png)
-![train and eval](/tensorBD_experiment3/detect1.png)
-![train and eval](/tensorBD_experiment3/detect2.png)
+![train and eval](/tensorBD_experiment3/loss1.PNG)
+![train and eval](/tensorBD_experiment3/loss2.PNG)
+![train and eval](/tensorBD_experiment3/loss3.PNG)
+![train and eval](/tensorBD_experiment3/mAP1.PNG)
+![train and eval](/tensorBD_experiment3/mAP2.PNG)
+![train and eval](/tensorBD_experiment3/mAP3.PNG)
+![train and eval](/tensorBD_experiment3/detect1.PNG)
+![train and eval](/tensorBD_experiment3/detect2.PNG)
 
 
 
