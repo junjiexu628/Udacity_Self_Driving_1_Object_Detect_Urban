@@ -49,7 +49,9 @@ This section should detail the results of the reference experiment. It should in
 
 -3.Next action: add the 'data augmentation option'. The jupyter recommends the random_rgb_to_gray option. So add this script in the 'pipeline_new.config'. Raname the file to 'pipeline_new0.config'.Make the new folder 'experiment0' in the experiment folder. Put the pipeline_new0.config file in to this new folder. Run second.
 
-![**Train and evaluation run in parallel, but the limited resource in the workspace.So the eval show a dot. Many students have the same issue in the Knowledge platform. No improvement on this issue. I surprise you even don't know this.**](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_reference/LOSS1.PNG)
+**Train and evaluation run in parallel, but the limited resource in the workspace.So the eval show a dot. Many students have the same issue in the Knowledge platform. No improvement on this issue. I'm surprised for this the repeated issue, waste too much time on this**
+
+![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_reference/LOSS1.PNG)
 ![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_reference/LOSS2.PNG)
 ![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_reference/LOSS3.PNG)
 ![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_reference/RECALL.PNG)
