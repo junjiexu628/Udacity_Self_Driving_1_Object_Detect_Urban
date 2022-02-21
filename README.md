@@ -77,8 +77,8 @@ This section should highlight the different strategies you adopted to improve yo
 -7.Fourth result: The total loss on train dataset is 3.89,compared with the last 2.3. The total loss on the evaluation dataset is 4.4, not better than the last 2.97.It doesn't optimize.The trend of going down is too slow in comparison of the cosine decay.
 ---Next action: The exponential decay learning rate performs unsatisfied. It doesn't become better than the cosine decay learning rate. So try the Adam optimizer based on the cosine decay.
 
-![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/tree/main/tehttps://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/tree/mainnsorBD_experiment1/LOSS1.PNG)
-![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/tree/main/thttps://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/tree/mainensorBD_experiment1/LOSS2.PNG)
+![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_experiment1/LOSS1.PNG)
+![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_experiment1/LOSS2.PNG)
 ![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_experiment1/LOSS3.PNG)
 ![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_experiment1/RECALL.PNG)
 ![train and eval](https://github.com/junjiexu628/Udacity_Self_Driving_1_Object_Detect_Urban/blob/main/tensorBD_experiment1/PR1.PNG)
